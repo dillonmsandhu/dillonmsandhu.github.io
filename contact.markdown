@@ -18,9 +18,7 @@ layout: page
     display: none !important;
   }
 </style>
-
-You can reach me via email at dillonmsandhu@gmail.com.
-
-You can also find me on:
+<br><br>
+You can reach me at dillonmsandhu@gmail.com.
 * [GitHub](https://github.com/dillonmsandhu?tab=repositories)
 * [LinkedIn](https://www.linkedin.com/in/dillon-sandhu-a23265a7/)
