@@ -55,10 +55,12 @@
 #   - vendor/ruby/
 
 # _config.yml
-title: Dillon Sandhu
+title: Dillon Sandhu's Website
 email: dillonmsandhu@gmail.com
-description: Deep Learning Research & Thoughts
-theme: minima
+# description: 
+# theme: minima
+# theme: jekyll-theme-minimal
+theme: jekyll-theme-clean-blog
 markdown: kramdown
 kramdown:
   math_engine: mathjax

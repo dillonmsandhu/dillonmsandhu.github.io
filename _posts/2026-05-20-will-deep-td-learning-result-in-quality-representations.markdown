@@ -72,7 +72,7 @@ Note we still have $\hat{v}_{best} = \Pi V$.
 
 The best linear fit provides a measure of the quality of our features.  That is, the value error of $\hat{v}_{best}$ (the blue dotted line in the image) gets smaller exactly when our feature space $\text{span}(\Phi)$ gets closer to the true value function. Informally,  $\text{Good Features} \iff \text{Best fit has low value error}$. 
 
-The value error vector $VE$, is defined as the difference between our fit and the true value function, $V$,. For $v_{best}$ it is equal to the blue vector:
+The value error vector $VE$, is defined as the difference between our fit and the true value function. For $v_{best}$ it is equal to the blue vector:
 
 $$VE(v_{best}) = V - \Pi V$$
 
@@ -184,7 +184,7 @@ I perform online, batch TD learning to evaluate the random policy on Four Rooms.
 After each TD update, I compute the best solution $v_{best}$ for the current features and on-policy distribution, and compute the exact Bellman Error and Value Error. Recall the metrics:
 - Bellman Error: $\|Tv_i - v_i\|_\mu^2$, indicates the degree that deep TD learning is shrinking the bellman residual.
 - Value Error: $\|V - v_i\|_\mu^2$, indicates whether deep TD learning is improving its fit of the value function.
-- Value Error of $v_{best}$: $\|V - \Pi V \|_\mu^2$, indicates whether the features are improving their proximity to $V$. 
+- Value Error of $v_{best}$: $\|V - \Pi V \|_\mu^2$, indicates whether the features are improving their proximity to $V$
 
 ## Results
 
