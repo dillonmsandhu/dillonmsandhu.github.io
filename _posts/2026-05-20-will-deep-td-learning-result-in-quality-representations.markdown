@@ -211,7 +211,7 @@ Rather than focus on the layer norm, I just want to highlight how different the 
 
 <div style="text-align: center; margin: 30px 0;">
   <img src="{{ '/assets/images/blog_post_1/alignment_no_ln.png' | relative_url }}" alt="Four Rooms" style="max-width: 100%; border-radius: 4px;">
-  <p style="color: gray; font-size: 0.85em; margin-top: 5px;"><em>Figure 6: VE alignment during learning</em></p>
+  <p style="color: gray; font-size: 0.85em; margin-top: 5px;"><em>Figure 7: VE alignment during learning with no layer norm. </em></p>
 </div>
 
 
