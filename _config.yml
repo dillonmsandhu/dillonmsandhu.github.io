@@ -58,9 +58,9 @@
 title: Dillon Sandhu's Website
 email: dillonmsandhu@gmail.com
 # description: 
-# theme: minima
+theme: minima
 # theme: jekyll-theme-minimal
-theme: jekyll-theme-clean-blog
+# theme: jekyll-theme-clean-blog
 markdown: kramdown
 kramdown:
   math_engine: mathjax
