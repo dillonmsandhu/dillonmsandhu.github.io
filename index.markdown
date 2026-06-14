@@ -19,7 +19,7 @@ layout: page
 </style>
 
 
-<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px; margin-top: 100px;">
+<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px; margin-top: 20px;">
   <img src="{{ 'assets/images/headshot.png' | relative_url }}" alt="Dillon Sandhu" width="200" style="border-radius: 8px;">
   <div>
     Hello -- I'm Dillon, a Computer Science PhD student at Duke University, advised by Ron Parr. Before graduate school, I worked as a business analyst and economic consultant. 
