@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "When Does TD Learning Improve Representations?"
+title:  "How reinforcement learning with TD learning depends on the inherent symmetry of the problem"
 date:   2026-06-09
 categories: representation learning
 ---
@@ -14,7 +14,26 @@ categories: representation learning
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
+<style>
+  .post-abstract {
+    background-color: #fcfcfc;
+    border-left: 5px solid #2a7ae2;
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+  }
+</style>
+
+<div class="post-abstract">
+  Deep Temporal Difference (TD) learning is a standard technique for Reinforcement Learning (RL), but its stability is fragile. Previous work has shown that if an environment is perfectly reversible, TD learning amounts to supervised learning of the true value function. But about practical problems, where the dynamics can be highly asymmetric? In this post, I extend previous theory of TD dynamics and define exact conditions for representation improvement. I find that, if the transition function is symmetric enough, TD learning will update the hidden layers of a neural network to fit the value function. In other words, I find mathematical condtions for when we get alignment. At the end, I try to provide intuition for when this condition will hold.
+</div>
+
+
 (This is a follow-up to my previous post [Will Deep TD Learning Result in Quality Representations?](https://dillonmsandhu.github.io/representation/learning/2026/05/20/will-deep-td-learning-result-in-quality-representations.html))
+
 
 Deep temporal difference learning is the primary method for estimating the value function in reinforcement learning. The goal of TD learning is to minimize the average squared value error, averaged over a state distribution $$\mu$$:
 
