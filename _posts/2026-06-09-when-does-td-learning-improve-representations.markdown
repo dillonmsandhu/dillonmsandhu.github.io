@@ -86,7 +86,7 @@ Though it doesn't appear in the standard value error, the key matrix is of massi
 $$
 \begin{align}
 \dot{\Phi}_t &= \eta_\Phi \cdot D(R + (I-\gamma P)v_t) w^\top\\
-&= \eta_\Phi \cdot (DR + A) w^\top
+&= \eta_\Phi \cdot (DR + Av_t) w^\top
 \end{align}
 $$
 
