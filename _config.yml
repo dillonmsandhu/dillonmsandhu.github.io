@@ -69,3 +69,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+header_pages:
+  - index.markdown
+  - posts.markdown
+  - contact.markdown
+  

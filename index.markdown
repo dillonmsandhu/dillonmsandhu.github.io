@@ -32,7 +32,7 @@ layout: page
 
 ## Publications
 
-* **[Approximate Next Policy Sampling: Replacing Conservative Target Policy Updates in Deep RL](https://arxiv.org/abs/2605.05481)** *Dillon Sandhu, Ronald Parr* preprint, forthcoming at RLC, 2026.
+* **[Approximate Next Policy Sampling: Replacing Conservative Target Policy Updates in Deep RL]({{ '/paper/anps/' | relative_url }})** *Dillon Sandhu, Ronald Parr* preprint, forthcoming at RLC, 2026.
 
 
 ## Blog

@@ -1,0 +1,17 @@
+---
+---
+@import "minima";
+
+/* Change site title and navigation links to blue */
+.site-title,
+.site-title:visited {
+  color: #1a0dab; /* Adjust this hex code to your preferred shade of blue */
+}
+
+.site-nav .page-link {
+  color: #1a0dab;
+}
+
+.site-nav .page-link:hover {
+  color: #0056b3;
+}
