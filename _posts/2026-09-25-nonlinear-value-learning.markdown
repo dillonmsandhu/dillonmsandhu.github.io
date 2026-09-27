@@ -137,7 +137,7 @@ Results are shown in Figure 6. Note that BEM succeeds on this problem.
 The MSPBE is the length of the green vector in Figure 5. Letting $$\Pi_\theta$$ be the linear projection onto the span of $$\nabla_\theta v$$, we have:
 
 $$
-\text{MSPBE} = \| \Pi_\theta (T v_\theta - v_\theta) \|^2 = \| \Pi_\theta \delta_\theta \|^2 = \delta_\theta^\intercal \Pi_\theta \delta_\theta
+\text{MSPBE} = \| \Pi_\theta (T v_\theta - v_\theta) \|^2 = \| \Pi_\theta \delta_\theta \|^2
 $$
 
 Since we have just one parameter, $$\Pi_\theta$$ is the $$3\times3$$ matrix:
@@ -145,6 +145,12 @@ Since we have just one parameter, $$\Pi_\theta$$ is the $$3\times3$$ matrix:
 $$
 \Pi_\theta = \frac{1}{\|\nabla_\theta v\|^2} (\nabla_\theta v) (\nabla_\theta v)^\intercal
 $$
+
+$$
+\text{MSPBE} = (\Pi_\theta \delta_\theta)^\intercal(\Pi_\theta \delta_\theta) = \delta_\theta^\intercal \Pi_\theta^\intercal\Pi_\theta \delta_\theta = \delta_\theta^\intercal \Pi_\theta \delta_\theta
+$$
+
+Where the last line follows since repeated application of a projection amounts to a single projection.
 
 
 $$
