@@ -33,7 +33,7 @@ I explain the difference between non-linear value function learning for RL, and 
 
 A key concept in RL is learning the value function with *bootstrapping*. But there are several objectives that all make use of bootstrapping, all of which differ in subtle but important ways. For instance, we have *Bellman Error Minimization*, *TD Learning*, *Partially Fitted Value Iteration*, not to mention *Mean Squared Projected Bellman Error*, **oh my**... 
 
-Compounding the issue, standard treatment of these algorithms (e.g. from Sutton and Barto) uses linear value function estimation. In this case, the span of the tangent line of the value estimate is the same as the hypothesis class itself. As we shall see, when the value estimate is not linear in its paramters, intuitions from linear RL break down. 
+Making things more confusing, standard treatment of these algorithms (e.g. from Sutton and Barto) uses linear value function estimation. In that case, the span of the tangent line of the value estimate is the same as the hypothesis class itself. As we shall see, when the value estimate is not linear in its paramters, intuitions from linear RL break down. 
 
 In this post, I demonstrate the behavior of the following *non-linear* value function learning methods on the the spiral MDP:
 - *Fitted Value Iteration (FVI)*
