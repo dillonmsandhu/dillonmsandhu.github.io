@@ -57,7 +57,7 @@ The value function, and its estimate are in three dimensions. However, $$v_\thet
 
 What's nasty about this MRP -- at least from the point of view of TD learning and friends -- is that the Bellman Operator points towards the true value center, but when *fitting it as a stationary target* (like most bootstrapping methods), $$v_\theta$$ fits the Bellman Estimate of the value, yet it diverges from $$V^\pi$$.
 
-A few technical details. First, the Bellman Operator is closed in this 2D space. For those who are curious why: $$\mathbb{1} =(1,1,1)^\intercal$$ is a left eigenvector of $$P$$ with eigenvalue 1. This implies that for any vector $$v$$ orthogonal to $$\mathbb{1})$$, $$Pv$$ remains orthogonal to $$\mathbb{1}$$, since $$\mathbb{1}^\intercal P v = \mathbb{1} v = 0$$.
+A few technical details. First, the Bellman Operator is closed in this 2D space. For those who are curious why: $$\mathbf{1} =(1,1,1)^\intercal$$ is a left eigenvector of $$P$$ with eigenvalue 1. This implies that for any vector $$v$$ orthogonal to $$\mathbf{1}$$, $$Pv$$ remains orthogonal to $$\mathbf{1}$$, since $$\mathbf{1}^\intercal P v = \mathbf{1}^\intercal v = 0$$.
 
 Technical detail 2: The state-visitation distribution in the spiral MDP is exactly one third times the identity. Thus the on-policy weighted distance reduces to a constant scalar times the Euclidean distance. Technically, all inner products should be weighted by the on-policy distribution (stored in the matrix $$D$$ in my earlier posts), but because $$D = \frac{1}{3}I$$, I ignore it in this post. See the final section of the [original paper](https://www.mit.edu/~jnt/Papers/J063-97-bvr-td.pdf) for the description of the MRP.
 
